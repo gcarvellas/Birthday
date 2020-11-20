@@ -12,7 +12,7 @@ public class AnnounceTask extends BukkitRunnable{
 	@Override
 	public void run() {
 		cal = Calendar.getInstance();
-		if (cal.get(Calendar.MINUTE) == 0 && cal.get(Calendar.HOUR) == 9)
+		if (cal.get(Calendar.MINUTE) == 0 && cal.get(Calendar.HOUR) == 0)
 			AnnounceBirthdays.announceBirthdays();
 		}
 	
