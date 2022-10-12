@@ -1,4 +1,4 @@
-package org.birthday.birthday.Data;
+package org.birthday.Data;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

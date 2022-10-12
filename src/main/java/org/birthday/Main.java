@@ -1,4 +1,4 @@
-package org.birthday.birthday;
+package org.birthday;
 
 import java.io.IOException;
 import java.util.NavigableSet;
@@ -10,9 +10,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
-import org.birthday.birthday.Commands.*;
-import org.birthday.birthday.Data.Birthday;
-import org.birthday.birthday.Data.BirthdayList;
+import org.birthday.Commands.*;
+import org.birthday.Data.Birthday;
+import org.birthday.Data.BirthdayList;
 
 public class Main extends JavaPlugin{
 	private static BirthdayList birthdayList;

@@ -1,4 +1,4 @@
-package org.birthday.birthday.Data;
+package org.birthday.Data;
 
 import java.io.Serializable;
 import java.text.ParseException;

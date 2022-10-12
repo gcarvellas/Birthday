@@ -1,4 +1,4 @@
-package org.birthday.birthday;
+package org.birthday;
 
 import java.io.ByteArrayOutputStream;
 import java.io.ByteArrayInputStream;
@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 import java.io.ObjectInputStream;
 import java.util.Base64;
 
-import org.birthday.birthday.Data.BirthdayList;
+import org.birthday.Data.BirthdayList;
 
 public class ConfigManager {
 	//Variables

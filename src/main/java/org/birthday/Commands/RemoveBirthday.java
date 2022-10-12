@@ -1,14 +1,13 @@
-package org.birthday.birthday.Commands;
+package org.birthday.Commands;
 
 import java.text.ParseException;
 
+import org.birthday.Data.Birthday;
+import org.birthday.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-
-import org.birthday.birthday.Main;
-import org.birthday.birthday.Data.Birthday;
 
 public class RemoveBirthday implements CommandExecutor{
 	

@@ -1,9 +1,9 @@
-package org.birthday.birthday;
+package org.birthday;
 
 import java.util.Calendar;
 
+import org.birthday.Commands.AnnounceBirthdays;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.birthday.birthday.Commands.AnnounceBirthdays;
 
 public class AnnounceTask extends BukkitRunnable{
 	Calendar cal;
