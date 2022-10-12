@@ -1,0 +1,27 @@
+name: Birthday
+main: me.Dragon.Birthday.Main
+version: 1.0
+author: CallOfTheDragon
+description: Birthday manager and announcer for players.
+commands:
+ birthdaySave:
+  description: (OP) Saves all birthdays to server.
+  usage: /<command>
+ birthdayLoad:
+  description: (OP) Loads all birthdays from the sever.
+  usage: /<command>
+ birthdayAdd:
+  description: Adds user to the birthday list.
+  usage: /<command> username date OR /<command> date
+ birthdayRemove:
+  description: Removes an existing user from the birthday list.
+  usage: /<command> username OR /<command>
+ birthdayGetAll:
+  description: (OP) Adds user to the birthday list.
+  usage: /<command>
+ birthdayAnnounce:
+  description: (OP) Announces all of the birthdays for today.
+  usage: /<command>
+ birthdayToday:
+  description: Returns today's birthdays.
+  usage: /<command>
