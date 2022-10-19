@@ -4,8 +4,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-import java.io.ObjectInputStream;
 import java.util.Base64;
+
+import org.apache.commons.io.serialization.ValidatingObjectInputStream;
 
 import org.birthday.Data.BirthdayList;
 
@@ -15,7 +16,7 @@ public class ConfigManager {
 	private static ObjectOutputStream oos;
 	
 	private static byte[] data;
-	private static ObjectInputStream ois;
+	private static ValidatingObjectInputStream ois;
 	
 	//Accessors
 	public static String serialize(BirthdayList list) throws IOException{
@@ -28,9 +29,10 @@ public class ConfigManager {
 	
 	public static BirthdayList deserialize(String dataString) throws IOException, ClassNotFoundException{
 		data = Base64.getDecoder().decode(dataString);
-		ois = new ObjectInputStream(new ByteArrayInputStream(data));
-	        Object o  = ois.readObject();
-	        ois.close();
-	        return (BirthdayList) o;
+		ois = new ValidatingObjectInputStream(new ByteArrayInputStream(data));
+		ois.accept(BirthdayList.class);
+		BirthdayList o = (BirthdayList) ois.readObject();
+		ois.close();
+		return o;
 	}
-	}
+}

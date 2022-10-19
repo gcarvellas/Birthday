@@ -1,5 +1,5 @@
 name: Birthday
-main: me.Dragon.Birthday.Main
+main: org.birthday.Main
 version: 1.0
 author: CallOfTheDragon
 description: Birthday manager and announcer for players.
